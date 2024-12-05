@@ -1,0 +1,332 @@
+/* General Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0; /* Light text for better contrast */
+    background: #1a1a1a; /* Dark background for the overall theme */
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #f0f0f0; /* Light text for headings */
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #f0f0f0; /* Light headings */
+    text-transform: uppercase;
+}
+
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center;
+    padding: 20px 40px;
+    background: #b30000; /* Dark red background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    overflow: visible; /* Make sure nothing gets hidden */
+}
+
+/* Navbar Links Container */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between links */
+    justify-content: center; /* Center the navigation links */
+    width: auto; /* Ensure the navbar is flexible to expand */
+}
+
+/* Styling for each navbar link */
+.nav-links a {
+    text-decoration: none;
+    color: #fff; /* White text for links */
+    font-weight: 600;
+    padding: 10px 15px; /* Padding around each link */
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #222; /* Dark color on hover */
+    transform: scale(1.1); /* Slight grow effect on hover */
+}
+
+/* Ensure navbar items don't overflow */
+.navbar {
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+/* Optional: Adjust font size to fit better */
+.nav-links a {
+    font-size: 1.1rem; /* Adjust size to ensure links fit */
+}
+
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; /* White text for the logo */
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff; /* White links */
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffcccc; /* Light red on hover or active */
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 40px;
+    background: #660000; /* Dark red background for hero section */
+    color: #f0f0f0; /* Light text for better contrast */
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-title span {
+    color: #ff0000; /* Bright red text for emphasis */
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #b30000; /* Dark red button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #8b0000; /* Darker red on hover */
+}
+
+/* Skills Section */
+.skills {
+    background: #333; /* Dark gray background for the skills section */
+    color: #f0f0f0; /* Light text */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skill {
+    padding: 20px;
+    background: #4d0000; /* Dark red background for skill cards */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.skill i {
+    font-size: 2.5rem;
+    color: #ff0000; /* Bright red icons */
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    margin: 10px 0;
+    color: #f0f0f0; /* Light text for skill titles */
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Achievements Section */
+.achievements {
+    background: #660000; /* Dark red background for achievements */
+    color: #f0f0f0; /* Light text */
+}
+
+.achievement-list h3 {
+    font-size: 1.8rem;
+}
+
+.achievement-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-list li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact {
+    background: #333; /* Dark gray background for contact section */
+    color: #f0f0f0; /* Light text */
+    text-align: left;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 40px;
+    max-width: 48%; /* Make space for the other section */
+    background: #4d0000; /* Dark red background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 48%; /* Make space for the other section */
+    background: #4d0000; /* Dark red background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #b30000; /* Dark red button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #8b0000; /* Darker red on hover */
+    color: #fff;
+}
+
+/* Education Section */
+.education {
+    background: #333; /* Dark gray background for education section */
+    color: #f0f0f0; /* Light text */
+    padding: 60px 40px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.education-details {
+    flex: 1;
+    margin-right: 40px;
+    max-width: 48%; /* Same width as contact details */
+    background: #4d0000; /* Dark red background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.education-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.education-details p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    background: #222; /* Dark footer */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffcccc; /* Light red hover for social icons */
+}
+
+/* Make the image circular */
+.about-img img {
+    width: 150px; /* Adjust the size of the circle */
+    height: 150px; /* Keep the height the same as width */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits well inside the circle */
+    border: 5px solid #fff; /* Optional: adds a white border around the circle */
+}
